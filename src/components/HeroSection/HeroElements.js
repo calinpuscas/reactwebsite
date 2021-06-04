@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -21,11 +21,11 @@ export const HeroContainer = styled.div`
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
+        rgba(0, 0, 0, 0.9) 100%
       ),
       linear-gradient(
           180deg, 
-          rgba(0, 0, 0, 0.2) 0%, 
+          rgba(0, 0, 0, 0.5) 0%, 
         transparent 100%);
     z-index: 2;
 `;
