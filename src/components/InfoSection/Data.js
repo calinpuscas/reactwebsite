@@ -35,19 +35,19 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "services",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: "Premium Banking",
-  headline: "Modernize Banking Operations",
+  id: "signup",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Join Our Dream",
+  headline: "Global Money Business",
   description:
-    "To get started, gather your bank card or account number and PIN along with your Social Security Number.",
-  buttonLabel: "Sign In",
+    "You'll encounter a team of professionals in the money business and global developement.",
+  buttonLabel: "Sign Up",
   imgStart: true,
   img: require("../../images/svg-3.svg").default,
   alt: "Car",
   dark: true,
   primary: true,
-  darkText: true,
+  darkText: false,
 };

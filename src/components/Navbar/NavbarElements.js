@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   height: 80px;
-  background: #05060b;
+  background: ${({ scrollNav }) => (scrollNav ? "#05060B" : "transparent")};
   margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #fff;
+    border-bottom: 5px solid #3bcfb2;
   }
 `;
 
@@ -106,21 +106,39 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 5rem;
-  background: #3bcfb2;
+  background: #00c9ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #92fe9d,
+    #00c9ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #92fe9d,
+    #00c9ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   white-space: nowrap;
   padding: 7px 22px;
-  color: #faebd7;
+  color: #007873;
   font-size: 1.5rem;
   font-family: "Almarai", sans-serif;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #f9f1e7;
+    transition: all 0.5s ease-in-out;
+    background: #1e9600; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ff0000,
+      #fff200,
+      #1e9600
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff0000, #fff200, #1e9600);
     color: #007873;
   }
 `;

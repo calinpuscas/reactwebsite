@@ -59,6 +59,10 @@ export const TopLine = styled.p`
   letter-spacing: 1.4rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 480px) {
+    line-height: 2rem;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -66,10 +70,11 @@ export const Heading = styled.h1`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 900;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: ${({ lightText }) => (lightText ? "#F9F1E7" : "#007873")};
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
