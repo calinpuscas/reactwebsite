@@ -91,7 +91,6 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2`
   font-size: 5.5rem;
-  font-weight: bold;
   margin-bottom: 10px;
   color: #f9f1e7;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
