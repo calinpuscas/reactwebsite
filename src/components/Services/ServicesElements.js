@@ -90,7 +90,7 @@ export const ServicesH1 = styled.h1`
 `;
 
 export const ServicesH2 = styled.h2`
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #f9f1e7;
