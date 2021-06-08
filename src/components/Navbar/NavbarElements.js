@@ -3,13 +3,13 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #11070f;
   height: 80px;
+  background: ${({ scrollNav }) => (scrollNav ? "#05060B" : "transparent")};
   margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -32,8 +32,9 @@ export const NavLogo = styled(LinkR)`
   color: #3bcfb2;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   display: flex;
+  font-family: 'Almarai', sans-serif;
   align-items: center;
   margin-left: 24px;
   font-weight: 900;
@@ -84,13 +85,13 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Encode Sans Expanded", sans-serif;
+  font-family: "Almarai", sans-serif;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #fff;
+    border-bottom: 5px solid #3bcfb2;
   }
 `;
 
@@ -105,20 +106,39 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 5rem;
-  background: #3bcfb2;
+  background: #00c9ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #92fe9d,
+    #00c9ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #92fe9d,
+    #00c9ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   white-space: nowrap;
   padding: 7px 22px;
-  color: #faebd7;
-  font-size: 1rem;
+  color: #007873;
+  font-size: 1.5rem;
+  font-family: "Almarai", sans-serif;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #f9f1e7;
+    transition: all 0.5s ease-in-out;
+    background: #1e9600; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ff0000,
+      #fff200,
+      #1e9600
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff0000, #fff200, #1e9600);
     color: #007873;
   }
 `;
